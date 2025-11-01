@@ -1,9 +1,10 @@
 const Project = ({ darkMode }) => {
+  const baseUrl = import.meta.env.BASE_URL;
   const projects = [
     {
       title: 'TikTalk',
       description: 'TikTalk is a full-stack web application that generates tiktok-styled short-form videos after processing lecture mp4s/mp3s or pdfs notes.',
-      image: '/images/tiktalk.png',
+      image: `${baseUrl}images/tiktalk.png`,
       tags: ['Firebase', 'Kafka', 'Docker', 'OpenAI Whisper', 'Google Gemini AI', 'Google Cloud', 'Google TTS', 'React', 'Next.js', 'Typescript', 'Flask', 'MoviePy'],
       link: 'https://github.com/ajlgg/TikTalk'
     },

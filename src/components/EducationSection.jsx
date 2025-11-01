@@ -1,16 +1,17 @@
 const EducationSection = ({ darkMode }) => {
+  const baseUrl = import.meta.env.BASE_URL;
   const education = [
     {
       institution: 'Conestoga High School',
       degree: 'High School Diploma',
       period: '2018 - 2022',
-      name: 'Conestoga', icon: '/images/conestoga.png',
+      name: 'Conestoga', icon: `${baseUrl}images/conestoga.png`,
     },
     {
       institution: 'Ursinus College',
       degree: 'Bachelor of Science in Computer Science',
       period: '2022 - 2026',
-      name: 'Ursinus College', icon: '/images/ursinus.png',
+      name: 'Ursinus College', icon: `${baseUrl}images/ursinus.png`,
 
     }
   ]

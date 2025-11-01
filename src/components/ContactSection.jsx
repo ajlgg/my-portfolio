@@ -1,8 +1,9 @@
 const ContactSection = ({ darkMode }) => {
+  const baseUrl = import.meta.env.BASE_URL;
   const socialLinks = [
-    { name: 'GitHub', icon: '/images/githublogo.png', url: 'https://github.com/ajlgg', isImage: true },
-    { name: 'LinkedIn', icon: '/images/linkedin.png', url: 'https://www.linkedin.com/in/aj-luthra2003/', isImage: true },
-    { name: 'Email', icon: '/images/gmaillogo.png', url: 'mailto:luthraa223@gmail.com', isImage: true }
+    { name: 'GitHub', icon: `${baseUrl}images/githublogo.png`, url: 'https://github.com/ajlgg', isImage: true },
+    { name: 'LinkedIn', icon: `${baseUrl}images/linkedin.png`, url: 'https://www.linkedin.com/in/aj-luthra2003/', isImage: true },
+    { name: 'Email', icon: `${baseUrl}images/gmaillogo.png`, url: 'mailto:luthraa223@gmail.com', isImage: true }
   ]
 
   return (
@@ -29,11 +30,11 @@ const ContactSection = ({ darkMode }) => {
             
             <div className="space-y-4 mb-8">
               <div className={`flex items-center ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                <img src="/images/email-icon.png" alt="Email" className="w-6 h-6 mr-3 object-contain" />
+                <img src={`${baseUrl}images/email-icon.png`} alt="Email" className="w-6 h-6 mr-3 object-contain" />
                 luthraa223@gmail.com
               </div>
               <div className={`flex items-center ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                <img src="/images/phone.png" alt="Phone" className="w-6 h-6 mr-3 object-contain" />
+                <img src={`${baseUrl}images/phone.png`} alt="Phone" className="w-6 h-6 mr-3 object-contain" />
                 +1 (484) 800-2825
               </div>
             </div>

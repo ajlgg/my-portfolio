@@ -1,32 +1,33 @@
 const SkillsSection = ({ darkMode }) => {
+  const baseUrl = import.meta.env.BASE_URL;
   const programmingLanguages = [
-    { name: 'JavaScript', icon: '/images/javascript.png' },
-    { name: 'Java', icon: '/images/java.png'},
-    { name: 'TypeScript', icon: '/images/typescript.png' },
-    { name: 'Python', icon: '/images/python.png' },
-    { name: 'HTML/CSS', icon: '/images/htmlcss.png'},
-    { name: 'C', icon: '/images/c.png' },
-    { name: 'C++', icon: '/images/c++.png' }
+    { name: 'JavaScript', icon: `${baseUrl}images/javascript.png` },
+    { name: 'Java', icon: `${baseUrl}images/java.png`},
+    { name: 'TypeScript', icon: `${baseUrl}images/typescript.png` },
+    { name: 'Python', icon: `${baseUrl}images/python.png` },
+    { name: 'HTML/CSS', icon: `${baseUrl}images/htmlcss.png`},
+    { name: 'C', icon: `${baseUrl}images/c.png` },
+    { name: 'C++', icon: `${baseUrl}images/c++.png` }
   ]
 
   const frameworksAndLibraries = [
-    { name: 'React', icon: '/images/react.png'},
-    { name: 'Node.js', icon: '/images/nodejs.png'},
-    { name: 'Next.js', icon: '/images/nextjs.png'},
-    { name: 'Tailwind CSS', icon: '/images/tailwind.png' },
-    { name: 'Flask', icon: '/images/flask.png' },
-    { name: 'Express', icon: '/images/express.png' }
+    { name: 'React', icon: `${baseUrl}images/react.png`},
+    { name: 'Node.js', icon: `${baseUrl}images/nodejs.png`},
+    { name: 'Next.js', icon: `${baseUrl}images/nextjs.png`},
+    { name: 'Tailwind CSS', icon: `${baseUrl}images/tailwind.png` },
+    { name: 'Flask', icon: `${baseUrl}images/flask.png` },
+    { name: 'Express', icon: `${baseUrl}images/express.png` }
   ]
 
   const toolsAndDatabases = [
-    { name: 'Git', icon: '/images/git.png' },
-    { name: 'Docker', icon: '/images/docker.png' },
-    { name: 'Kafka', icon: '/images/kafka.png' },
-    { name: 'Redis', icon: '/images/redis.png' },
-    { name: 'PostgreSQL', icon: '/images/postgresql.png' },
-    { name: 'Firebase', icon: '/images/firebase.png' },
-    { name: 'MySQL', icon: '/images/mysql.png' },
-    // { name: 'MongoDB', icon: '/images/mongodb.png' },
+    { name: 'Git', icon: `${baseUrl}images/git.png` },
+    { name: 'Docker', icon: `${baseUrl}images/docker.png` },
+    { name: 'Kafka', icon: `${baseUrl}images/kafka.png` },
+    { name: 'Redis', icon: `${baseUrl}images/redis.png` },
+    { name: 'PostgreSQL', icon: `${baseUrl}images/postgresql.png` },
+    { name: 'Firebase', icon: `${baseUrl}images/firebase.png` },
+    { name: 'MySQL', icon: `${baseUrl}images/mysql.png` },
+    // { name: 'MongoDB', icon: `${baseUrl}images/mongodb.png` },
   ]
 
   return (
