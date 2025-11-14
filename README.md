@@ -62,7 +62,8 @@ npm install gh-pages
 
 ## 🧩 Run the Development Server
 
-Make sure you have **Node.js** installed.
+Make sure you have **Node.js** installed. 
+https://nodejs.org/en/download/
 
 Then run:
 ```bash
